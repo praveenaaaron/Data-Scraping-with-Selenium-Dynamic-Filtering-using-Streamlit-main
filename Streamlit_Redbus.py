@@ -68,6 +68,7 @@ for i,r in df_WB.iterrows():
     lists_WB.append(r["Route_name"])
 
 #setting up streamlit page
+
 slt.set_page_config(layout="wide")
 
 web=option_menu(menu_title="Redbus Data Scraping with Selenium & Dynamic Filtering using Streamlit",
@@ -76,6 +77,7 @@ web=option_menu(menu_title="Redbus Data Scraping with Selenium & Dynamic Filteri
                 orientation="horizontal"
                 )
 # Home page setting
+
 if web=="Home":
     
     slt.title("Redbus Data Scraping with Selenium & Dynamic Filtering using Streamlit")
@@ -108,7 +110,7 @@ if web=="Home":
     slt.markdown("B.N.Piraviena")
 
 # States and Routes page setting
-if web == "📍States and Routes":
+if web == "Data Filtering Streamlit Application":
     S = slt.selectbox("Lists of States", ["Kerala", "Adhra Pradesh", "Telugana", "Goa", "Rajastan", 
                                           "South Bengal", "Haryana", "Assam", "Uttar Pradesh", "West Bengal"])
     
@@ -338,7 +340,7 @@ if web == "📍States and Routes":
 
     # South Bengal bus fare filtering       
     if S=="South Bengal":
-        SB=slt.selectbox("list of rotes",lists_SB)
+        SB=slt.selectbox("list of routes",lists_SB)
 
         def type_and_fare_SB(bus_type, fare_range):
             conn = mysql.connector.connect(host="localhost", user="root", password="ALAN1@3veena", database="RED_BUS_DETAILS")
@@ -381,7 +383,7 @@ if web == "📍States and Routes":
     
     # Haryana bus fare filtering
     if S=="Haryana":
-        H=slt.selectbox("list of rotes",lists_H)
+        H=slt.selectbox("list of routes",lists_H)
 
         def type_and_fare_H(bus_type, fare_range):
             conn = mysql.connector.connect(host="localhost", user="root", password="ALAN1@3veena", database="RED_BUS_DETAILS")
@@ -425,7 +427,7 @@ if web == "📍States and Routes":
 
     # Assam bus fare filtering
     if S=="Assam":
-        AS=slt.selectbox("list of rotes",lists_AS)
+        AS=slt.selectbox("list of routes",lists_AS)
 
         def type_and_fare_AS(bus_type, fare_range):
             conn = mysql.connector.connect(host="localhost", user="root", password="ALAN1@3veena", database="RED_BUS_DETAILS")
@@ -468,7 +470,7 @@ if web == "📍States and Routes":
 
     # Utrra Pradesh bus fare filtering
     if S=="Utrra Pradesh":
-        UP=slt.selectbox("list of rotes",lists_UP)
+        UP=slt.selectbox("list of routes",lists_UP)
 
         def type_and_fare_UP(bus_type, fare_range):
             conn = mysql.connector.connect(host="localhost", user="root", password="ALAN1@3veena", database="RED_BUS_DETAILS")
@@ -511,7 +513,7 @@ if web == "📍States and Routes":
 
     # West Bengal bus fare filtering
     if S=="West Bengal":
-        WB=slt.selectbox("list of rotes",lists_WB)
+        WB=slt.selectbox("list of routes",lists_WB)
 
         def type_and_fare_WB(bus_type, fare_range):
             conn = mysql.connector.connect(host="localhost", user="root", password="ALAN1@3veena", database="RED_BUS_DETAILS")
