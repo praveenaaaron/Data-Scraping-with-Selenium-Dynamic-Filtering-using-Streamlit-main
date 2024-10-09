@@ -70,28 +70,42 @@ for i,r in df_WB.iterrows():
 #setting up streamlit page
 slt.set_page_config(layout="wide")
 
-web=option_menu(menu_title="🚌OnlineBus",
-                options=["Home","📍States and Routes"],
+web=option_menu(menu_title="Redbus Data Scraping with Selenium & Dynamic Filtering using Streamlit",
+                options=["Home","Data Filtering Streamlit Application"],
                 icons=["house","info-circle"],
                 orientation="horizontal"
                 )
 # Home page setting
 if web=="Home":
-    slt.image("logo.png",width=200)
+    
     slt.title("Redbus Data Scraping with Selenium & Dynamic Filtering using Streamlit")
-    slt.subheader(":blue[Domain:]  Transportation")
-    slt.subheader(":blue[Ojective:] ")
+    slt.subheader(":red[Introduction:] ")
     slt.markdown("The 'Redbus Data Scraping and Filtering with Streamlit Application' aims to revolutionize the transportation industry by providing a comprehensive solution for collecting, analyzing, and visualizing bus travel data. By utilizing Selenium for web scraping, this project automates the extraction of detailed information from Redbus, including bus routes, schedules, prices, and seat availability. By streamlining data collection and providing powerful tools for data-driven decision-making, this project can significantly improve operational efficiency and strategic planning in the transportation industry.")
-    slt.subheader(":blue[Overview:]") 
-    slt.markdown("Selenium: Selenium is a tool used for automating web browsers. It is commonly used for web scraping, which involves extracting data from websites. Selenium allows you to simulate human interactions with a web page, such as clicking buttons, filling out forms, and navigating through pages, to collect the desired data...")
-    slt.markdown('''Pandas: Use the powerful Pandas library to transform the dataset from CSV format into a structured dataframe.
-                    Pandas helps data manipulation, cleaning, and preprocessing, ensuring that data was ready for analysis.''')
-    slt.markdown('''MySQL: With help of SQL to establish a connection to a SQL database, enabling seamless integration of the transformed dataset
-                    and the data was efficiently inserted into relevant tables for storage and retrieval.''')
-    slt.markdown("Streamlit: Developed an interactive web application using Streamlit, a user-friendly framework for data visualization and analysis.")
-    slt.subheader(":blue[Skill-take:]")
-    slt.markdown("Selenium, Python, Pandas, MySQL,mysql-connector-python, Streamlit.")
-    slt.subheader(":blue[Developed-by:]  Piraviena.B.N")
+    slt.subheader(":red[Domain:] ")
+    slt.markdown("TRANSPORTATION")
+    slt.subheader(":red[SKILL-TAKEAWAY:] ")
+    slt.markdown("* Python scripting")
+    slt.markdown("* Selenium")
+    slt.markdown("* Data Collection")
+    slt.markdown("* Data Management using SQL")
+    slt.markdown("* Streamlit")
+    slt.subheader(":red[TECHNOLOGY USED:] ")
+    slt.markdown("* Python 3.9.I")
+    slt.markdown("* MySQL 8.0")
+    slt.markdown("* Streamlit")
+    slt.markdown("* Selenium")
+    slt.subheader(":red[FEATURES OF APPLICATION:] ")
+    slt.markdown("Retrive the Bus Information: Selenium is a powerful tool for automating web browsers, which is especially useful for web scraping tasks. If you want to retrieve bus details from RedBus, you can use Selenium to automate the process of searching for buses and extracting the relevant information. This involves interacting with web elements like input fields and buttons, waiting for the page to load, and extracting the desired details from the search results. Store data in database: The collected bus details data was transformed into pandas dataframes. Before that, a new database and tables were created using the MySQL connector. With the help of MySQL, the data was inserted into the respective tables. The database could be accessed and managed in the MySQL environment. web app - streamlit: With the help of Streamlit, you can create an interactive application similar to RedBus by designing a user-friendly interface that allows users to search for bus routes, view available buses, and get details like departure times and prices")
+    slt.subheader(":red[PACKAGES AND LIBRARIES:] ")
+    slt.markdown("* pandas as pd")
+    slt.markdown("* mysql.connector")
+    slt.markdown("* import time")
+    slt.markdown("* streamlit as slt")
+    slt.markdown("* import datetime")
+    slt.markdown("* from streamlit_option_menu import option_menu")
+    slt.markdown("* from selenium import webdriver")
+    slt.subheader(":blue[Developed-by:] ")
+    slt.markdown("B.N.Piraviena")
 
 # States and Routes page setting
 if web == "📍States and Routes":
@@ -536,7 +550,4 @@ if web == "📍States and Routes":
             return df
 
         df_result = type_and_fare_WB(select_type, select_fare)
-        slt.dataframe(df_result)
-
-
-
+        slt.dataframe
