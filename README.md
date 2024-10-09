@@ -36,6 +36,8 @@ streamlit as slt</li>
 <li>from streamlit_option_menu import option_menu</li>
 <li>from selenium import webdriver</li>
 </ul>
+<h3>Developed-by:</h3>
+<h2><B.N.Piraviena/h2>
 
 
 
