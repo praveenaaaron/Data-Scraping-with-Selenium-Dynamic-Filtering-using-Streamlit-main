@@ -37,7 +37,7 @@ streamlit as slt</li>
 <li>from selenium import webdriver</li>
 </ul>
 <h3>Developed-by:</h3>
-<h2><B.N.Piraviena/h2>
+<h2>B.N.Piraviena</h2>
 
 
 
