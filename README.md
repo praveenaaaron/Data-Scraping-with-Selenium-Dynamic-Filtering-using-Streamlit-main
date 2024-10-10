@@ -38,6 +38,9 @@ streamlit as slt</li>
 </ul>
 <h3>Developed-by:</h3>
 <h2>B.N.Piraviena</h2>
+<h3>Sample Screen:</h3>
+<h1>Home</h1>
+https://github.com/praveenaaaron/Data-Scraping-with-Selenium-Dynamic-Filtering-using-Streamlit-main/blob/main/csv_files/home1.png
 
 
 
