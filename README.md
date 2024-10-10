@@ -40,7 +40,7 @@ streamlit as slt</li>
 <h2>B.N.Piraviena</h2>
 <h3>Sample Screen:</h3>
 <h1>Home</h1>
-https://github.com/praveenaaaron/Data-Scraping-with-Selenium-Dynamic-Filtering-using-Streamlit-main/blob/main/csv_files/home1.png
+<img src="https://github.com/praveenaaaron/Data-Scraping-with-Selenium-Dynamic-Filtering-using-Streamlit-main/blob/main/csv_files/home1.png">
 
 
 
